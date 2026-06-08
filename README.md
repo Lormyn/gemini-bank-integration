@@ -115,8 +115,7 @@ gemini-bank-integration/
 ├── styles.css          # Full design system (~3100 lines)
 ├── server.py           # Simple HTTP server (port 8001)
 ├── gemini-logo.png     # Gemini avatar for chat messages
-├── bankid_logo.png     # BankID branding for verification widgets
-└── bankid_qr.png       # BankID QR code for authentication widget
+└── bankid_logo.png     # BankID branding for verification widgets
 ```
 
 ---
