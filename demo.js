@@ -7,7 +7,7 @@ let flowState = 0;
   3  = BankID done → UC Credit Report (instant)
   4  = UC Credit shown → salary docs request
   5  = Salary upload zone shown
-  6  = KALP assessment → personalized rates (variable + fixed)
+  6  = Personalized rates shown → add-ons question
   7  = Add-ons helkund confirm
   8  = Signing (name + BankID)
   9  = Done / finalized
@@ -1361,8 +1361,9 @@ async function runAddonsConfirm(confirmHelkund) {
         await sleep(800);
         
         currentRate = 3.69;
+        const totalAnnualSavings = Math.round(loanAmount * ((originalRate - 3.69) / 100));
         await appendGeminiResponse(
-            `Excellent! Your new mortgage interest rate is locked at **3.69% variable** (total annual savings of ${fmtNum(Math.round(loanAmount * (currentRate - 3.69) / 100))} SEK). We will coordinate the transfer of your everyday banking services automatically after the mortgage transfer is completed.`
+            `Excellent! Your new mortgage interest rate is locked at **3.69% variable** (total annual savings of ${fmtNum(totalAnnualSavings)} SEK). We will coordinate the transfer of your everyday banking services automatically after the mortgage transfer is completed.`
         );
     } else {
         await sleep(800);
