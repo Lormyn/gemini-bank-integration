@@ -6,6 +6,8 @@ Everything runs in the browser — no API keys, no backend services required. Th
 
 > **Disclaimer**: This is a simulation/demo — no real banking connections are made. "Swedish Bank" is a fictional entity. All data shown (rates, credit reports, etc.) is mock data for demonstration purposes only.
 
+> **Tip**: This demo pairs well with [**bolan-agent**](https://github.com/Lormyn/bolan-agent) — a real-time voice-driven mortgage advisor powered by the Gemini Live API and ADK 2.0. Run bolan-agent first to experience the bank-side voice interaction, then use this demo to see how Gemini orchestrates the full transfer from the user's perspective.
+
 ---
 
 ## Quick Start
